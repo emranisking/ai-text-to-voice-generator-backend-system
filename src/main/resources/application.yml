@@ -1,0 +1,32 @@
+server:
+  port: 7000
+  address: 0.0.0.0   # allow access from Android emulator & other devices
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/felicia-and-alfred
+    username: postgres
+    password: emran
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+  web:
+    resources:
+      static-locations: file:./voice_db/   # ✅ Serve MP3s from here
+
+# ElevenLabs API
+elevenlabs:
+  api-url: https://api.elevenlabs.io/v1
+  default-voice: pqHfZKP75CvOlQylNhV4
+  #api-key: YOUR_API_KEY   # ⚠️ Better keep this in env var instead of hardcoding
+
+redis:
+  host: localhost
+  port: 6379
+
+app:
+  storage:
+    directory: ./voice_db   # local MP3 storage path (use S3 in prod)
+  tts:
+    voice_id: "default_voice"
