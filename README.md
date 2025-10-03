@@ -51,7 +51,7 @@ It converts text into speech, caches previously generated audio, merges word-lev
 ---
 
 ⚡ Setup & Run
-git clone https://github.com/yourusername/alfred-voice-ai-backend.git
+git clone https://github.com/emranisking/alfred-voice-ai-backend.git
 cd alfred-voice-ai-backend
 
 2️⃣ Configure Database & Redis
