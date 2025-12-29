@@ -28,6 +28,7 @@ public class VoiceServiceImpl implements VoiceService {
         this.worker = worker;
     }
 
+
     private static String redisKey(String phrase, String voiceId) {
         return "phrase:" + voiceId + ":" + phrase.toLowerCase().trim();
     }
