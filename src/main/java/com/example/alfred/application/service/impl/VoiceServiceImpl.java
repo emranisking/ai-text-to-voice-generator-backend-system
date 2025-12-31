@@ -33,6 +33,7 @@ public class VoiceServiceImpl implements VoiceService {
         return "phrase:" + voiceId + ":" + phrase.toLowerCase().trim();
     }
 
+
     @Override
     public CompletableFuture<VoiceResponseDto> getVoiceForPhrase(String phrase, String voiceId) {
         return CompletableFuture.supplyAsync(() -> {
