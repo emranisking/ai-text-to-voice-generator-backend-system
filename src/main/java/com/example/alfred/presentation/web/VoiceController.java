@@ -12,6 +12,7 @@ import com.example.alfred.application.dto.VoiceResponseDto;
 @RequestMapping("/real")
 public class VoiceController {
 
+
     private final RedisService redisService;
     private final GenerationWorker generationWorker;
 

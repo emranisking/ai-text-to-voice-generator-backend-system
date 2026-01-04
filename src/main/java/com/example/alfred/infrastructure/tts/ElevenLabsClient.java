@@ -24,6 +24,7 @@ public class ElevenLabsClient {
                 .filter(line -> !line.trim().isEmpty())
                 .toList();
 
+
         if (apiKeys.isEmpty()) {
             throw new IllegalArgumentException("No API keys found in file: " + apiKeysFile);
         }
