@@ -8,6 +8,7 @@ import java.util.concurrent.Executor;
 public class AsyncConfig {
 
 
+
     @Bean(name = "generationExecutor")
     public Executor generationExecutor() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
