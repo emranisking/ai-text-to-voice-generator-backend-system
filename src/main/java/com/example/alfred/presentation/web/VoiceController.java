@@ -22,6 +22,7 @@ public class VoiceController {
     }
 
 
+
     @GetMapping("/voice")
     public ResponseEntity<VoiceResponseDto> generateVoice(
             @RequestParam(name = "text") String text,
