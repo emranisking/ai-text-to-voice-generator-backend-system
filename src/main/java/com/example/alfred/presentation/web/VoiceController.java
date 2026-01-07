@@ -21,6 +21,7 @@ public class VoiceController {
         this.generationWorker = generationWorker;
     }
 
+
     @GetMapping("/voice")
     public ResponseEntity<VoiceResponseDto> generateVoice(
             @RequestParam(name = "text") String text,
